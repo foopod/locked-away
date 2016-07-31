@@ -1,0 +1,119 @@
+body{
+    margin:1em auto;
+    max-width:40em;
+    padding: 2em 1em;
+    line-height: 1.5;
+    font:1.2em/1.62em sans-serif;
+}
+
+h1,h2,h3{
+    line-height:1.2em;
+}
+
+.header {
+    font-size:82px;
+    margin: 0;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+}
+
+.subHeader {
+    font-weight: 100;
+    margin-top: -2.5em;
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+
+.entryContainer {
+    padding-bottom: 2em;
+}
+
+.entryHeader {
+    line-height:1.2em;
+    font-weight: 800;
+    font-size: 38px;
+    display:inline;
+}
+
+.entryDate { 
+    font-weight: 100;
+    font-size: 28px;
+    float: right;
+}
+
+.entryBody {
+    font-weight: 300;
+}
+
+.inactive{
+    color: #777777;
+}
+
+.active {
+    color: black;
+}
+
+.label {
+    float:left;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.loginContainer {
+    margin:auto;
+    max-width:16em;
+    text-align:center;
+}
+
+input[type=text],input[type=password], select {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    margin-top: -2px;  
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+input[type=submit] {
+    text-align:center;
+}
+
+.submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.passwordHint{
+    font-size:70%;  
+    color: gray;
+    margin: auto;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        max-width:none
+    }
+    
+    .blogHeader {
+        font-size: 67px;
+    }
+    
+    .entryHeader {
+        font-size: 28px;
+    }
+    
+    .entryDate{
+        font-size: 22px;
+    }
+}

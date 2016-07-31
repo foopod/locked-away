@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <h1 class="header">2017</h1>
+        <h3 style="font-weight:100;">Latest...</h3>
+        <div id="diaryContainer">
+        </div>
+        <script src="assets/jquery.min.js"></script>
+        <script src="entries.js"></script>
+        <script type="text/javascript">
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            entries.sort(function(a, b) {
+                return new Date(b.date) - new Date(a.date);
+            });
+            $('#diaryContainer').empty();
+            var entryIndex = 0;
+            var currentEntry = entries[entryIndex];
+            $('#diaryContainer').append(
+                    '<div class="entryContainer active"><div class="entryHeader"><span>'+
+                days[new Date(currentEntry.date).getDay()]+'</span>'+'<span class="entryDate">' + new Date(currentEntry.date).getDate()+' ' +months[new Date(currentEntry.date).getMonth()] + '</span></div><div class="entryBody"><p>'+ currentEntry.entry+'</p></div><br><br><div style="text-align:center;"><a onclick="loadNextEntry()" class="submit">Previous Entry</a></div></div>'
+                    );
+            entryIndex++;
+            
+            var loadNextEntry = function(){
+                //Change diaryContainer class to grey
+                $('.active').addClass('inactive');
+                $('.inactive').removeClass('active');
+                $('.submit').remove();
+                currentEntry = entries[entryIndex];
+                $('#diaryContainer').append(
+                    '<div class="entryContainer active"><div class="entryHeader"><span>'+
+                days[new Date(currentEntry.date).getDay()]+'</span>'+'<span class="entryDate">' + new Date(currentEntry.date).getDate()+' ' +months[new Date(currentEntry.date).getMonth()] + '</span></div><br><div class="entryBody">'+ currentEntry.entry+'</div><br><br><div style="text-align:center;"><a onclick="loadNextEntry()" class="submit">Previous Entry</a></div></div>'
+                    );
+                entryIndex++;
+                $("body").animate({scrollTop:$(document).height()},'slow');
+            }
+//            
+//            $.each(entries, function(key, value){
+//                var date = new Date(value.date);
+//                console.log(date);
+//                $('#diaryContainer').append(
+//                    '<div class="entryContainer"><div class="entryHeader"><span>'+days[date.getDay()]+'</span>'+'<span class="entryDate">' + date.getDate()+' ' +months[date.getMonth()] + '</span></div><div class="entryBody">'+ value.entry+'</div><br><div style="text-align:center;"><a class="submit">Previous Entry</a></div></div>'
+//                    );
+//            });
+			</script>
+    </body>
+
+
+</html>
