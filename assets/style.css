@@ -1,7 +1,5 @@
 body{
-    margin:1em auto;
-    max-width:40em;
-    padding: 2em 1em;
+    max-width:none;
     line-height: 1.5;
     font:1.2em/1.62em sans-serif;
 }
@@ -100,9 +98,11 @@ input[type=submit] {
     margin: auto;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
     body{
-        max-width:none
+        margin:1em auto;
+        max-width:40em;
+        padding: 2em 1em;
     }
     
     .header {
@@ -119,5 +119,11 @@ input[type=submit] {
     
     .entryDate{
         font-size: 22px;
+    }
+    
+    .loginContainer {
+        width: auto;
+        max-width:none;
+        font-size: 150%;
     }
 }
