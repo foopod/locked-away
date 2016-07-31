@@ -98,7 +98,7 @@ input[type=submit] {
     margin: auto;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-aspect-ratio: 4/6){
     body{
         margin:1em auto;
         max-width:40em;
