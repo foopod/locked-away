@@ -105,8 +105,12 @@ input[type=submit] {
         max-width:none
     }
     
-    .blogHeader {
-        font-size: 67px;
+    .header {
+        font-size: 62px;
+    }
+    
+    .subHeader {
+        margin-top: -1.5em;
     }
     
     .entryHeader {
