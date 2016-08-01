@@ -1,6 +1,7 @@
 body{
     max-width:90%;
     line-height: 1.5;
+    margin: auto;
     font:1.2em/1.62em sans-serif;
 }
 
@@ -13,6 +14,7 @@ h1,h2,h3{
     margin: 0;
     font-weight: 100;
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 .subHeader {
@@ -72,11 +74,12 @@ input[type=text],input[type=password], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 input[type=submit] {
     text-align:center;
+    font-size: 26px;
 }
 
 .submit {
@@ -93,12 +96,11 @@ input[type=submit] {
 }
 
 .passwordHint{
-    font-size:70%;  
+    font-size:18px;  
     color: gray;
-    margin: auto;
 }
 
-@media screen and (max-width: 565px){
+@media screen and (max-width: 565px), screen and (min-height: 900px){
     body{
         margin:1em auto;
         max-width:40em;
@@ -121,9 +123,13 @@ input[type=submit] {
         font-size: 22px;
     }
     
+    .passwordHint{
+        font-size:26px;  
+    }
+    
     .loginContainer {
         width: auto;
         max-width:none;
-        font-size: 150%;
+        font-size: 200%;
     }
 }
