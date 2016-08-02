@@ -3,8 +3,7 @@
         <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
-        <h1 class="header">2017</h1>
-        <h3 style="font-weight:100;">Latest...</h3>
+        <h3 style="font-weight:300;">Latest entry...</h3>
         <div id="diaryContainer">
         </div>
         <script src="assets/jquery.min.js"></script>
@@ -18,9 +17,11 @@
             $('#diaryContainer').empty();
             var entryIndex = 0;
             var currentEntry = entries[entryIndex];
-            $('#diaryContainer').append(
+            var currentDate = new Date(currentEntry.date);
+            var currentYear = currentDate.getFullYear();
+            $('#diaryContainer').append('<h1 class="header">'+currentYear+'</h1>'+
                     '<div class="entryContainer active"><div class="entryHeader"><span>'+
-                days[new Date(currentEntry.date).getDay()]+'</span>'+'<span class="entryDate">' + new Date(currentEntry.date).getDate()+' ' +months[new Date(currentEntry.date).getMonth()] + '</span></div><div class="entryBody"><p>'+ currentEntry.entry+'</p></div><br><br><div style="text-align:center;"><a onclick="loadNextEntry()" class="submit">Previous Entry</a></div></div>'
+                days[currentDate.getDay()]+'</span>'+'<span class="entryDate">' + currentDate.getDate()+' ' +months[currentDate.getMonth()] + '</span></div><div class="entryBody"><p>'+ currentEntry.entry+'</p></div><br><br><div style="text-align:center;"><a onclick="loadNextEntry()" class="submit">Previous Entry</a></div></div>'
                     );
             entryIndex++;
             
@@ -30,6 +31,11 @@
                 $('.inactive').removeClass('active');
                 $('.submit').remove();
                 currentEntry = entries[entryIndex];
+                currentDate = new Date(currentEntry.date);
+                if (currentYear !=currentDate.getFullYear()){
+                    currentYear = currentDate.getFullYear();
+                    $('#diaryContainer').append('<h1 class="header">'+currentYear+'</h1>');
+                }
                 $('#diaryContainer').append(
                     '<div class="entryContainer active"><div class="entryHeader"><span>'+
                 days[new Date(currentEntry.date).getDay()]+'</span>'+'<span class="entryDate">' + new Date(currentEntry.date).getDate()+' ' +months[new Date(currentEntry.date).getMonth()] + '</span></div><br><div class="entryBody">'+ currentEntry.entry+'</div><br><br><div style="text-align:center;"><a onclick="loadNextEntry()" class="submit">Previous Entry</a></div></div>'
