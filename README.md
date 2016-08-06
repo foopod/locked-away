@@ -4,7 +4,7 @@ A text based game in which the player explores someones life by guessing the pas
 
 #buildJSON.py
 
-Now with a simple python script to compile all the entries in the story folder into a json that is easily loaded in.
+Now with a simple python script to compile all the markdown diary entries in the story folder into a json that is easily loaded in.
 
 #Story Ideas
 

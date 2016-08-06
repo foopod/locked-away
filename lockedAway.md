@@ -18,9 +18,12 @@
 + punk vibe
 + can't spell for shit
 + doesn't like mayo, but mustard is the fucking bomb
-+ broken home, dad beat mum and child, alcoholic
++ broken home, dad died, mums an alcoholic
 
 #Elora 
++ Normie
++ clothes, make up, lipgloss
++ doesn't really exist
 
 
 # Entry 1 (2016-04-04)
