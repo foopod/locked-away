@@ -4,7 +4,7 @@ Woops. Haven't been keeping up with my journal entries. Elora is such a distract
 
 We did something mischevious today.
 
-Oops.
+Oopsy.
 
 There is this old abandoned store at the end of the main road, can't remember what it used to be, but it has been boarded up for years. Anyway, last time we went past it some of the rafters had come down and we could see inside. Right at the back covered in an old sheet is what we suspected to an old manikin.
 

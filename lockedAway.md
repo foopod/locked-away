@@ -25,7 +25,6 @@
 + clothes, make up, lipgloss
 + doesn't really exist
 
-
 # Entry 1 (2016-04-04)
 ## Massive fight with girlfriend
 Our character is scared, not for her own safety, of which soon it will be apparent that she should be. But scared because she doesn't want her girlfriend to break up with her, she doesn't want to let go of the only good thing in her life. They have just had a massive fight, things were broken, punches were thrown and words that cannot be unsaid were said.
