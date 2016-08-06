@@ -21,7 +21,7 @@
 + broken home, dad beat mum and child, alcoholic
 
 #Elora 
- 
+
 
 # Entry 1 (2016-04-04)
 ## Massive fight with girlfriend

@@ -2,6 +2,10 @@
 
 A text based game in which the player explores someones life by guessing the password to someones online diary.
 
+#buildJSON.py
+
+Now with a simple python script to compile all the entries in the story folder into a json that is easily loaded in.
+
 #Story Ideas
 
 + The last entry is a doctors appointment where the main character is told they are schizophrenic, it is then immediately obvious that the diary belongs to only one of the split personalities.
