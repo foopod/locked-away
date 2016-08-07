@@ -55,7 +55,7 @@ var loadNextEntry = function(){
     $('.inactive').removeClass('active');
     $('.submit').parent().remove();
     updateEntry();
-    $("body").animate({scrollTop:$('#entry' + currentEntry.date).offset().top -100},'slow');
+    $("body").animate({scrollTop:$('#entry' + currentEntry.date).offset().top -50},'slow');
 }
 
 var loadLatestEntry = function(){
