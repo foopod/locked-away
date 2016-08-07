@@ -5,8 +5,22 @@ body{
     padding: 2em;
 }
 
+img {
+    width : 100%;
+}
+
 h1,h2,h3{
     line-height:1.2em;
+}
+
+.newEntry{ /** Just in case*/
+    padding:1em;
+    border-radius: 15px;
+    border-color: green;
+    background-color: #EFFFEF;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 2em;   
 }
 
 .header {
