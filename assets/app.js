@@ -31,8 +31,8 @@ var updateEntry = function() {
 
 var showAttachment = function() {
     $('.submit').parent().remove();
-    $("#beginningContainer").append('<img id="thePicture" src="assets/ourCouple.png">');
-    $("body").animate({scrollTop:$('#thePicture').offset().top -100},'slow');
+    $("#thePicture").show();
+    $("body").animate({scrollTop:$('#thePicture').offset().top -80},'slow');
 }
 
 var init = function() {
@@ -68,8 +68,9 @@ var showNewEntry = function(){
     $("#beginningContainer").removeClass('inactive');
     $("#beginningContainer").addClass('active');
     currentEntry = entries[entryIndex];
-    $("#beginningContainer").append('<div id="now" class="entryHeader"><span>Just Now</span></div><div class="entryBody">'+ currentEntry.entry+'</div><br><div style="text-align:center;"><a onclick="showAttachment()" class="submit">1 Attachment</a></div>');
-  $("#beginningContainer").slideToggle( );
+    $("#beginningContainer").append('<div id="now" class="entryHeader"><span>Just Now</span></div><div class="entryBody">'+ currentEntry.entry+'</div><br><div style="text-align:center;"><a onclick="showAttachment()" class="submit">1 Attachment</a></div><img id="thePicture" src="assets/ourCouple.png">');
+    $("#thePicture").hide();
+    $("#beginningContainer").slideToggle( );
 }
 
 
