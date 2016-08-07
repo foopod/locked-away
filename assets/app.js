@@ -9,9 +9,9 @@ var preloadedImage;
 
 var hasLoadNextButton = function(){
     if(entryIndex+2 != entries.length){
-        return '<a onclick="loadNextEntry()" class="submit">Previous Entry</a>';
+        return '<a id="'+currentEntry.date+'" onclick="loadNextEntry()" class="submit">Previous Entry</a>';
     } else {
-        return '<a onclick="loadLatestEntry()" class="submit">Previous Entry</a>';   
+        return '<a id="'+currentEntry.date+'" onclick="loadLatestEntry()" class="submit">Previous Entry</a>';   
     }
 }
 
@@ -26,7 +26,7 @@ var updateEntry = function() {
             firstEntry = false;
         }
     }
-    $('#diaryContainer').append('<div class="entryContainer active"><div id=' + currentEntry.date + ' class="entryHeader"><span>' + days[currentDate.getDay()] + '</span>' + '<span class="entryDate">' + currentDate.getDate() + ' ' + months[currentDate.getMonth()] + '</span></div><div class="entryBody"><p>' + currentEntry.entry + '</p></div><br><div style="text-align:center;">' + hasLoadNextButton() +'</div></div>');
+    $('#diaryContainer').append('<div class="entryContainer active"><div id="entry' + currentEntry.date + '" class="entryHeader"><span>' + days[currentDate.getDay()] + '</span>' + '<span class="entryDate">' + currentDate.getDate() + ' ' + months[currentDate.getMonth()] + '</span></div><div class="entryBody"><p>' + currentEntry.entry + '</p></div><br><div style="text-align:center;">' + hasLoadNextButton() +'</div></div>');
     entryIndex++;
 };
 
@@ -55,7 +55,7 @@ var loadNextEntry = function(){
     $('.inactive').removeClass('active');
     $('.submit').parent().remove();
     updateEntry();
-    $("body").animate({scrollTop:$('#' + currentEntry.date).offset().top -100},'slow');
+    $("body").animate({scrollTop:$('#entry' + currentEntry.date).offset().top -100},'slow');
 }
 
 var loadLatestEntry = function(){
