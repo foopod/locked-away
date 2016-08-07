@@ -35,7 +35,6 @@ h1,h2,h3{
 .subHeader {
     font-weight: 100;
     margin-top: -1.5em;
-    padding-left: 1em;
     padding-bottom: 2em;
 }
 
@@ -45,7 +44,7 @@ h1,h2,h3{
     padding-bottom: 0.5em;
 }
 
-.loginContainer {
+#loginContainer {
     margin:auto;
     width: auto;
     text-align:center;
@@ -124,7 +123,7 @@ input[type=submit] {
 /*        padding: 1em;*/
     }
     
-    .loginContainer {
+    #loginContainer {
         max-width: 20em;   
     }
 }
@@ -136,6 +135,7 @@ input[type=submit] {
     
     .header {
         font-size: 82px;
+        margin-left: -40px;
     }
     
     .subHeader {

@@ -6,11 +6,10 @@
         <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
     </head>
     <body>
-        <h1 class="header">LockedAway</h1>
-        <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
-        
-        <div class="loginContainer">
-            <form action="entries.html" method="get">
+        <div id="loginContainer">
+            <h1 class="header">LockedAway</h1>
+            <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
+            <form action="javascript:login()" name="loginForm">
             <span class="label">Username</span>
             <input type="text" value="addy12">
             <span class="label">Password</span>
@@ -19,5 +18,15 @@
             <input type="submit" class="submit" value="Login">
             </form>
         </div>
+        <script src="assets/jquery.min.js"></script>
+        <script src="assets/entries.js"></script>
+        <script src="assets/app.js"></script>
+        <script type="text/javascript">
+            var login = function() {
+                $("#loginContainer").remove();
+                $("body").append('<h3 style="font-weight:300;" id="pageIntro">Latest entry...</h3><div id="diaryContainer"></div>');
+                init();
+            };
+        </script>
     </body>
 </html>

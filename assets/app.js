@@ -5,6 +5,7 @@ var firstEntry = true;
 var currentEntry;
 var currentDate;
 var currentYear;
+var preloadedImage;
 
 var hasLoadNextButton = function(){
     if(entryIndex+2 != entries.length){
@@ -42,6 +43,10 @@ var init = function() {
     entryIndex = 0;
     currentYear= null;
     updateEntry();
+//    preloadedImage = $('<img />', {src : 'assets/ourCouple.png' + $('#imagename').val() +'.png'});
+    preloadedImage = new Image();
+    preloadedImage.src = "assets/ourCouple.png";
+    preloadedImage.id = "thePicture";
 };
 
 var loadNextEntry = function(){
@@ -68,10 +73,10 @@ var showNewEntry = function(){
     $("#beginningContainer").removeClass('inactive');
     $("#beginningContainer").addClass('active');
     currentEntry = entries[entryIndex];
-    $("#beginningContainer").append('<div id="now" class="entryHeader"><span>Just Now</span></div><div class="entryBody">'+ currentEntry.entry+'</div><br><div style="text-align:center;"><a onclick="showAttachment()" class="submit">1 Attachment</a></div><img id="thePicture" src="assets/ourCouple.png">');
+    $("#beginningContainer").append('<div id="now" class="entryHeader"><span>Just Now</span></div><div class="entryBody">'+ currentEntry.entry+'</div><br><div style="text-align:center;"><a onclick="showAttachment()" class="submit">1 Attachment</a></div>');
+    $("#beginningContainer").append(preloadedImage);
     $("#thePicture").hide();
     $("#beginningContainer").slideToggle( );
 }
 
 
-init();
