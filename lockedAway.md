@@ -72,3 +72,6 @@ Finally something nice happened. Another girl told the bus driver to wait for me
 # Entry 12 (2016-02-28)
 ## Journal Entries start
 So my counseller tells me I need to start writing journal entries. There is a history of mental illness in the family and they are worried that my emotions may embody themselves elsewhere in my life if I don't have an outlet for them. So here goes nothing. Dad died last week, am I sad? No. Am I a monster? Maybe.
+
+#Ending
+The last "Previous Entry" box triggers a message saying that there are no previous entries. But triggers another notification that a new entry has been added. AutoScroll to the top of the page to see the new entry. Entry gets its own page and describes how after the fight Elora needs to start coming to some of the counselling sessions too. The entry also has an attachment. Its a photo of Addy and Elora. But the photo has only got 1 person in it with plenty of room in it for Elora.
