@@ -62,7 +62,7 @@ var loadLatestEntry = function(){
     $('.submit').parent().remove();
     $('#diaryContainer').append('<div class="entryContainer"><div class="entryBody inactive"><p style="text-align:center;">No more entries...</p></div></div>');
     $("body").animate({scrollTop:$(document).height()},'slow');
-    $("#beginningContainer").append('<div style="text-align:center;"><a onclick="showNewEntry()" class="submit">1 New Entry</a></div>');
+    $("#beginningContainer").append('<div style="text-align:center;"><a id="newEntry" onclick="showNewEntry()" class="submit">1 New Entry</a></div>');
     $("body").delay(900).animate({scrollTop:0},'slow');
     
 }
@@ -73,10 +73,8 @@ var showNewEntry = function(){
     $("#beginningContainer").removeClass('inactive');
     $("#beginningContainer").addClass('active');
     currentEntry = entries[entryIndex];
-    $("#beginningContainer").append('<div id="now" class="entryHeader"><span>Just Now</span></div><div class="entryBody">'+ currentEntry.entry+'</div><br><div style="text-align:center;"><a onclick="showAttachment()" class="submit">1 Attachment</a></div>');
+    $("#beginningContainer").append('<div id="now" class="entryHeader"><span>Just Now</span></div><div class="entryBody">'+ currentEntry.entry+'</div><br><div style="text-align:center;"><a id="showAttachment" onclick="showAttachment()" class="submit">1 Attachment</a></div>');
     $("#beginningContainer").append(preloadedImage);
     $("#thePicture").hide();
     $("#beginningContainer").slideToggle( );
 }
-
-
