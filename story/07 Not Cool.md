@@ -1,6 +1,6 @@
 #2016-03-15
 
-I went to see Elora after class today. But as soon as I got there she broke down in tears. Someone at class had a made a rude comment about her work behind her back.
+When I visited Elora today she broke down in tears. Someone at class had a made a rude comment about her work behind her back.
 
 It didn't seem like they meant for her to hear them, but it was still really harsh.
 
