@@ -45,7 +45,7 @@ var init = function() {
     updateEntry();
 //    preloadedImage = $('<img />', {src : 'assets/ourCouple.png' + $('#imagename').val() +'.png'});
     preloadedImage = new Image();
-    preloadedImage.src = "assets/ourCouple.png";
+    preloadedImage.src = "assets/ourCouple.jpg";
     preloadedImage.id = "thePicture";
 };
 
