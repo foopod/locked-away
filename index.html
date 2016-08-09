@@ -20,9 +20,11 @@
             <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
             <form action="javascript:login()" name="loginForm" id="loginForm">
             <span class="label">Username</span>
-            <input type="text" value="addy12">
+            <span class="label error username"></span>
+            <input id="username" type="text" value="addy12">
             <span class="label">Password</span>
-            <input type=password>
+            <span class="label error password"></span>
+            <input id="password" type=password>
             <span class="passwordHint">Password hint : favourite month</span>
             <input type="submit" class="submit" value="Login" id="loginButton">
             </form>
@@ -31,10 +33,29 @@
         <script src="assets/entries.js"></script>
         <script src="assets/app.js"></script>
         <script type="text/javascript">
+            var attempted = false;
+            var firstAttempt = "password";
             var login = function() {
-                $("#loginContainer").remove();
-                $("body").append('<h3 style="font-weight:300;" id="pageIntro">Latest entry...</h3><div id="diaryContainer"></div>');
-                init();
+                if($("#username").val().length == 0){
+                    $(".label.error.username").html("Required");
+                } else {
+                    $(".label.error.username").empty();
+                    if($("#password").val().length > 0 && $("#password").val() != firstAttempt){
+                        if(attempted){
+                            $("#loginContainer").remove();
+                            $("body").append('<h3 style="font-weight:300;" id="pageIntro">Latest entry...</h3><div id="diaryContainer"></div>');
+                            init();
+                        } else { 
+                            $(".label.error.password").html("Incorrect. Try again.");
+                            firstAttempt = $("#password").val();
+                            attempted = true;
+                        }
+                    } else if($("#password").val() == firstAttempt){
+                        $(".label.error.password").html("Incorrect. Try again.");
+                    } else {
+                        $(".label.error.password").html("Required");
+                    }
+                }
             };
         </script>
     </body>

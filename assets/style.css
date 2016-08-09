@@ -44,6 +44,11 @@ h1,h2,h3{
     padding-bottom: 0.5em;
 }
 
+.error {
+    float:right;
+    color:red;
+}
+
 #loginContainer {
     margin:auto;
     width: auto;
