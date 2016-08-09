@@ -7,6 +7,9 @@ body{
 
 img {
     width : 100%;
+    margin: auto;
+    display: block;
+    box-shadow: 10px 10px #ccc;
 }
 
 h1,h2,h3{
@@ -146,5 +149,10 @@ input[type=submit] {
     .subHeader {
         margin-top: -2.5em;
         padding-bottom: 1em;
+    }
+    
+    img {
+        width : 80%;
+        box-shadow: 15px 15px #ccc;
     }
 }
