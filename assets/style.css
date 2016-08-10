@@ -115,7 +115,7 @@ input[type=submit] {
     color: black;
 }
 
-#loginContainer {
+.container {
     margin:auto;
     width: auto;
     text-align:center;
@@ -142,7 +142,7 @@ input[type=submit] {
 /*        padding: 1em;*/
     }
     
-    #loginContainer {
+    .container {
         max-width: 20em;   
     }
 }

@@ -18,22 +18,23 @@
             '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-NVQZZ5');</script>
         <!-- End Google Tag Manager -->
-        <div id="scene">
+        <div id="loginHeader">
             <h1 class="header">LockedAway</h1>
             <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
-            
-            <p>LockedAway is a text-based experience (I have been asked to stop calling it a game).</p>
-            
-            <h2 style="font-weight:100;">Some Context for you...</h2>
-            
-            <p>You stumble across an online diary website. It looks like a nice idea. But when you get to the login screen someone elses username sits neatly in the form.</p>
-            <br>
-            <div style="text-align:center;"><a onClick="startGame()" class="submit" id="begin">What do you?</a></div>
-            <br>
         </div>
-        <div id="loginContainer" style="display: none;">
-            <h1 class="header">LockedAway</h1>
-            <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
+        <div id="scene">
+            <div style="text-align:left;">
+                <p>LockedAway is a text-based experience (I have been asked to stop calling it a game).</p>
+
+                <h2 style="font-weight:100;">Some Context for you...</h2>
+
+                <p>You stumble across an online diary website. It looks like a nice idea. But when you get to the login screen someone elses username sits neatly in the form.</p>
+                <br>
+                <div style="text-align:center;"><a onClick="startGame()" class="submit" id="begin">What do you?</a></div>
+                <br>
+            </div>
+        </div>
+        <div id="loginContainer" class="container" style="display: none;">
             <form action="javascript:login()" name="loginForm" id="loginForm">
                 <span class="label">Username</span>
                 <span class="label error username"></span>
@@ -68,6 +69,7 @@
                         if($("#password").val().toLowerCase() == "december" || attempted){
                             $("#loginContainer").remove();
                             $(".footer").remove();
+                            $("#loginHeader").remove();
                             $("body").append('<h3 style="font-weight:300;" id="pageIntro">Latest entry...</h3><div id="diaryContainer"></div>');
                             dataLayer.push({'event': 'loginSuccess'});
                             init();
