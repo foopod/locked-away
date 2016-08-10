@@ -5,7 +5,7 @@ body{
     padding: 2em;
 }
 
-img {
+#thePicture {
     width : 100%;
     margin: auto;
     display: block;
@@ -39,6 +39,31 @@ h1,h2,h3{
     font-weight: 100;
     margin-top: -1.5em;
     padding-bottom: 2em;
+}
+
+.footer {
+    color:#a6aeb0;
+    font-size:10px;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: grey;
 }
 
 .label {
@@ -151,7 +176,7 @@ input[type=submit] {
         padding-bottom: 1em;
     }
     
-    img {
+    #thePicture {
         width : 80%;
         box-shadow: 15px 15px #ccc;
     }

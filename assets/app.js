@@ -43,7 +43,6 @@ var init = function() {
     entryIndex = 0;
     currentYear= null;
     updateEntry();
-//    preloadedImage = $('<img />', {src : 'assets/ourCouple.png' + $('#imagename').val() +'.png'});
     preloadedImage = new Image();
     preloadedImage.src = "assets/ourCouple.jpg";
     preloadedImage.id = "thePicture";

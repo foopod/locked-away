@@ -6,6 +6,9 @@
         <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
     </head>
     <body>
+        <script>
+            dataLayer = [];
+        </script>
         <!-- Google Tag Manager -->
             <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NVQZZ5"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -19,16 +22,17 @@
             <h1 class="header">LockedAway</h1>
             <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
             <form action="javascript:login()" name="loginForm" id="loginForm">
-            <span class="label">Username</span>
-            <span class="label error username"></span>
-            <input id="username" type="text" value="addy12">
-            <span class="label">Password</span>
-            <span class="label error password"></span>
-            <input id="password" type=password>
-            <span class="passwordHint">Password hint : favourite month</span>
-            <input type="submit" class="submit" value="Login" id="loginButton">
+                <span class="label">Username</span>
+                <span class="label error username"></span>
+                <input id="username" type="text" value="addy12">
+                <span class="label">Password</span>
+                <span class="label error password"></span>
+                <input id="password" type=password>
+                <span class="passwordHint">Password hint : favourite month</span>
+                <input type="submit" class="submit" value="Login" id="loginButton">
             </form>
         </div>
+        <div class="footer">Find out more about this game <a id="sourceCode" href="https://github.com/foopod/locked-away/tree/master">here</a>.</div>
         <script src="assets/jquery.min.js"></script>
         <script src="assets/entries.js"></script>
         <script src="assets/app.js"></script>
@@ -40,10 +44,14 @@
                     $(".label.error.username").html("Required");
                 } else {
                     $(".label.error.username").empty();
-                    if($("#password").val().length > 0 && $("#password").val() != firstAttempt){
-                        if(attempted){
+                    //Add password to datalayer
+                    dataLayer.push({'passwordAttempt': $("#password").val()});
+                    dataLayer.push({'event': 'loginAttempt'});
+                    if($("#password").val().toLowerCase() == "december" || ($("#password").val().length > 0 && $("#password").val() != firstAttempt)){
+                        if($("#password").val().toLowerCase() == "december" || attempted){
                             $("#loginContainer").remove();
                             $("body").append('<h3 style="font-weight:300;" id="pageIntro">Latest entry...</h3><div id="diaryContainer"></div>');
+                            dataLayer.push({'event': 'loginSuccess'});
                             init();
                         } else { 
                             $(".label.error.password").html("Incorrect. Try again.");
