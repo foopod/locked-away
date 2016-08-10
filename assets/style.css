@@ -5,15 +5,25 @@ body{
     padding: 2em;
 }
 
-#thePicture {
-    width : 100%;
-    margin: auto;
-    display: block;
-    box-shadow: 10px 10px #ccc;
-}
-
 h1,h2,h3{
     line-height:1.2em;
+}
+
+input[type=text],input[type=password], select {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    margin-top: -2px;  
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
+input[type=submit] {
+    text-align:center;
+    font-size: 26px;
 }
 
 .newEntry{ /** Just in case*/
@@ -47,25 +57,6 @@ h1,h2,h3{
     text-align: center;
 }
 
-a:link {
-    color: black;
-}
-
-/* visited link */
-a:visited {
-    color: black;
-}
-
-/* mouse over link */
-a:hover {
-    color: grey;
-}
-
-/* selected link */
-a:active {
-    color: grey;
-}
-
 .label {
     float:left;
     padding-top: 1em;
@@ -75,29 +66,6 @@ a:active {
 .error {
     float:right;
     color:red;
-}
-
-#loginContainer {
-    margin:auto;
-    width: auto;
-    text-align:center;
-}
-
-input[type=text],input[type=password], select {
-    width: 100%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    margin-top: -2px;  
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 26px;
-}
-
-input[type=submit] {
-    text-align:center;
-    font-size: 26px;
 }
 
 .submit {
@@ -145,6 +113,24 @@ input[type=submit] {
 
 .active {
     color: black;
+}
+
+#loginContainer {
+    margin:auto;
+    width: auto;
+    text-align:center;
+}
+
+#thePicture {
+    width : 100%;
+    margin: auto;
+    display: block;
+    box-shadow: 10px 10px #ccc;
+}
+
+#sourceCode {
+    color:black;
+    cursor:pointer;
 }
 
 @media screen and (min-width: 435px){
