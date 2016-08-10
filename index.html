@@ -50,6 +50,7 @@
                     if($("#password").val().toLowerCase() == "december" || ($("#password").val().length > 0 && $("#password").val() != firstAttempt)){
                         if($("#password").val().toLowerCase() == "december" || attempted){
                             $("#loginContainer").remove();
+                            $(".footer").remove();
                             $("body").append('<h3 style="font-weight:300;" id="pageIntro">Latest entry...</h3><div id="diaryContainer"></div>');
                             dataLayer.push({'event': 'loginSuccess'});
                             init();
