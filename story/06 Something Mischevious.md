@@ -6,7 +6,7 @@ We did something mischievous today.
 
 Oopsy.
 
-There is this old abandoned store at the end of the main road, can't remember what it used to be, but it has been boarded up for years. Anyway, last time we went past it some of the rafters had come down and we could see inside. Right at the back covered in an old sheet is what we suspected to an old manikin.
+There is this old abandoned store at the end of the main road, can't remember what it used to be, but it has been boarded up for years. Anyway, last time we went past it some of the rafters had come down and we could see inside. Right at the back covered in an old sheet is what we suspected to be an old manikin.
 
 I can tell you right now that we guessed right. Elora has been making a dress for her fashion design paper. We thought it would be a neat way to show it off. 
 
