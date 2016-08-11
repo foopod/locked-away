@@ -10,6 +10,6 @@ I am struggling to type, but I know that if I don't write this now then I never 
 
 She left me here, slumped in a pile on the floor, tears rolling down my face and my lip bloodied from her first hit.
 
-I didn't even do anything wrong. I was always faithful to her. I always did as she asked. I wouldn't do anything to hurt her.
+I didn't even do anything wrong. I was always faithful to her. I always did as she asked. I would never do anything to hurt her.
 
 I love her.
