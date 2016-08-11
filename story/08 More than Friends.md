@@ -12,4 +12,4 @@ We didn't talk about it either, her mum busted in with afternoon tea right after
 
 I can't help but think of her in a different light. I can't deny that I hadn't thought about her like that. But she always seemed so proper, I never thought she might be gay.
 
-Tehe, and now I'm all giddy like a little school girl experiencing her first crush.
+Tehe, and now I'm all giddy like a school girl having her first crush.

@@ -1,7 +1,7 @@
 #2016-04-03
 
-She must have a lot on today. I hope Elora is't too stressed out over her media assignment. She has been obsessing over it for weeks.
+She must be busy today. I hope Elora is't too stressed out over her media assignment. She has been obsessing over this thing for weeks.
 
-She won't reply to my facebook messages even though I know shes online. I just want her to talk to me.
+Shes online, why won't reply to my facebook messages? I just want her to hear how her day is going.
 
 Did I do something wrong?

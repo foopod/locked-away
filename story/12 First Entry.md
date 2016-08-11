@@ -8,7 +8,7 @@ Am I sad? Not really.
 
 Am I a monster? Maybe.
 
-Eh. It's not like he really added much to my life. Sure he was around, but never in a particularly positive way. He was just around. I mean I guess I 'loved' him, I think.
+Eh. It's not like he really added much to my life. Sure he was around, but never in a particularly positive way. I mean I guess I 'loved' him, I think.
 
 Mum has got me going to a counseller now after the accident. She thinks it will hope me cope.
 
