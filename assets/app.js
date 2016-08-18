@@ -34,7 +34,7 @@ var showAttachment = function() {
     $('.submit').parent().remove();
     $("#thePicture").show();
     $("body").animate({scrollTop:$('#thePicture').offset().top -80},'slow');
-    $("#beginningContainer").append('<br><h3 style="text-align: center;"> Made by <a href="http://jono.tech/" class="submit">Jono</a></h3>');
+    $("#beginningContainer").append('<br><h3 style="text-align: center;"> Made by <a id="jonoTech" href="http://jono.tech/" class="submit">Jono</a></h3>');
 }
 
 var init = function() {
