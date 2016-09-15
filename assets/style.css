@@ -133,6 +133,17 @@ input[type=submit] {
     cursor:pointer;
 }
 
+input[type=text], input[type=password], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 26px;
+}
+
 @media screen and (min-width: 435px){
     .header {
         font-size: 62px;
