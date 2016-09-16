@@ -1,6 +1,6 @@
 #2016-03-27
 
-Opposites attract. Its strange right? She is likes clothes and lipgloss. And I like rock bands and Star Wars.
+Opposites attract. Its strange right? She likes clothes and lipgloss. And I like rock bands and Star Wars.
 
 Something about her intrigues me. She is almost inhuman in how beautiful she is, every inch of her is perfect, not a hair out of place.
 
