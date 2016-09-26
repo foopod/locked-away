@@ -22,6 +22,7 @@
             <h1 class="header">LockedAway</h1>
             <h3 style="text-align:center" class="subHeader">Your Personal Diary</h3>
         </div>
+<!--
         <div id="scene">
             <div style="text-align:left;">
                 <p>LockedAway is a text-based experience (I have been asked to stop calling it a game).</p>
@@ -34,29 +35,25 @@
                 <br>
             </div>
         </div>
-        <div id="loginContainer" class="container" style="display: none;">
+-->
+        <div id="loginContainer" class="container">
             <form action="javascript:login()" name="loginForm" id="loginForm">
-                <span class="label">Username</span>
+<!--                <span class="label">Username</span>-->
                 <span class="label error username"></span>
-                <input id="username" type="text" value="addy12">
-                <span class="label">Password</span>
+                <input id="username" type="text" placeholder="Username">
+<!--                <span class="label">Password</span>-->
                 <span class="label error password"></span>
-                <input id="password" type=password>
-                <span class="passwordHint">Password hint : favourite month</span>
+                <input id="password" type=password placeholder="Password">
                 <input type="submit" class="submit" value="Login" id="loginButton">
             </form>
         </div>
-        <div class="footer">Find out more about this game <a id="sourceCode" href="https://github.com/foopod/locked-away/tree/master">here</a>.</div>
+        <div class="footer"><a href="http://github.com/foopod/locked-away">Terms & Privacy</a></div>
         <script src="assets/jquery.min.js"></script>
         <script src="assets/entries.js"></script>
         <script src="assets/app.js"></script>
         <script type="text/javascript">
             var attempted = false;
             var firstAttempt = "password";
-            var startGame = function() {
-                $("#scene").hide();
-                $("#loginContainer").show();
-            }
             var login = function() {
                 if($("#username").val().length == 0){
                     $(".label.error.username").html("Required");
