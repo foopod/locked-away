@@ -1,4 +1,4 @@
-#2016-03-27
+#2016-10-14
 
 Opposites attract. Its strange right? She likes clothes and lipgloss. And I like rock bands and Star Wars.
 
