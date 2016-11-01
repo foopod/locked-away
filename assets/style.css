@@ -4,9 +4,22 @@ body{
     font:1.2em/1.62em sans-serif;
     padding: 2em;
 }
-
+.div-fake-hidden {
+    width:0px;
+    height:0px;
+    overflow:hidden;
+}
 h1,h2,h3{
     line-height:1.2em;
+}
+a.love:link{
+    color:gray;
+}
+a.love:hover{
+    color:#FF69B4;
+}
+a.love:visited{
+    color:#FF69B4;
 }
 
 input[type=text],input[type=password], select {

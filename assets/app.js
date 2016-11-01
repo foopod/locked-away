@@ -34,11 +34,19 @@ var showAttachment = function() {
     $('.submit').parent().remove();
     $("#thePicture").show();
     $("body").animate({scrollTop:$('#thePicture').offset().top -80},'slow');
-    $("#beginningContainer").append('<br><div id="mc_embed_signup" style="max-width:30em;margin:auto;display:none;"><h1 style="text-align: center;font-size: 22px;font-weight: 300;">Want to see what <a href="http://jono.tech">Jono</a> makes next? <a href="http://twitter.com/foocodes"><i class="fa fa-twitter" aria-hidden="true"></i></a></h1><form action="//tech.us14.list-manage.com/subscribe/post?u=0163b6e55df2af9859e7e27db&amp;id=7576196686" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" style="text-align:center;"><div id="mc_embed_signup_scroll"><input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email" required=""><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0163b6e55df2af9859e7e27db_7576196686" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit" style="background-color:darkorange;"></div></div></form></div>');
+    $('#share').hide();
+    $('#share').removeClass("div-fake-hidden");
+    $("#beginningContainer").append('<br><div id="mc_embed_signup" style="max-width:30em;margin:auto;display:none;"><h1 style="text-align: center;font-size: 22px;font-weight: 300;">Want to see what <a href="http://jono.tech">Jono</a> makes next?</h1><form action="//tech.us14.list-manage.com/subscribe/post?u=0163b6e55df2af9859e7e27db&amp;id=7576196686" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" style="text-align:center;"><div id="mc_embed_signup_scroll"><input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email" required=""><div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0163b6e55df2af9859e7e27db_7576196686" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit" style="background-color:darkorange;"></div></div></form></div>');
+    $("#beginningContainer").append($("#share"));
+    
     setTimeout(function(){
-        $('#mc_embed_signup').slideDown('slow',function(){
-           $("body").animate({scrollTop:$('#thePicture').offset().top - 10},'slow');
-        });
+//        if(Math.random()<.5){
+//            $('#mc_embed_signup').slideDown('slow',function(){
+//               $("body").animate({scrollTop:$('#thePicture').offset().top - 10},'slow');
+//            });
+//        }else {
+               $('#share').slideDown('slow');
+//        }
         
     }, 2000);
 }
